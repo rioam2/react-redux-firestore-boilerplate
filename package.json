@@ -1,0 +1,41 @@
+{
+	"name": "React-Firebase-Boilerplate",
+	"version": "0.0.0",
+	"private": true,
+	"dependencies": {
+		"@fortawesome/fontawesome": "*",
+		"@fortawesome/react-fontawesome": "*",
+		"firebase": "*",
+		"firebase-admin": "*",
+		"firebase-tools": "*",
+		"prop-types": "*",
+		"randomatic": "*",
+		"react": "*",
+		"react-dom": "*",
+		"react-motion": "*",
+		"react-motion-ui-pack": "*",
+		"react-redux": "^5.0.7",
+		"react-router-dom": "*",
+		"react-scripts": "*",
+		"redux": "*",
+		"redux-firestore": "*",
+		"redux-thunk": "*",
+		"styled-components": "*"
+	},
+	"scripts": {
+		"start": "react-scripts start",
+		"build": "react-scripts build",
+		"test": "react-scripts test --env=jsdom",
+		"eject": "react-scripts eject"
+	},
+	"devDependencies": {
+		"eslint": "*",
+		"eslint-config-airbnb": "*",
+		"eslint-config-prettier": "*",
+		"eslint-plugin-import": "*",
+		"eslint-plugin-jsx-a11y": "*",
+		"eslint-plugin-prettier": "*",
+		"eslint-plugin-react": "*",
+		"prettier": "*"
+	}
+}
