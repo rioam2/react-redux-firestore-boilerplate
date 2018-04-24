@@ -21,11 +21,11 @@ This one should be pretty straight-forward. As developers, we need to work effec
 
 ## Todo
 
-[ ] Finish project's Readme
-  [ ] Provide proper usage and installation instructions
-  [ ] Document the data-flow model
-  [ ] Provide documentation of how user's and their stores are organized.
-[ ] Create action methods for adding/modifying database data
+- [ ] Finish project's Readme
+  - [ ] Provide proper usage and installation instructions
+  - [ ] Document the data-flow model
+  - [ ] Provide documentation of how user's and their stores are organized.
+- [ ] Create action methods for adding/modifying database data
 
 ## Usage
 
