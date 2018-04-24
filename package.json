@@ -4,7 +4,6 @@
 	"private": true,
 	"dependencies": {
 		"@firebase/app-types": "0.x",
-		"@types/react": "^16.3.12",
 		"firebase": "^4.13.1",
 		"firebase-admin": "^5.12.0",
 		"firebase-tools": "^3.18.4",
