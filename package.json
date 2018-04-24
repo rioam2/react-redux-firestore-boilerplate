@@ -3,24 +3,19 @@
 	"version": "0.0.0",
 	"private": true,
 	"dependencies": {
-		"@fortawesome/fontawesome": "*",
-		"@fortawesome/react-fontawesome": "*",
-		"firebase": "*",
-		"firebase-admin": "*",
-		"firebase-tools": "*",
-		"prop-types": "*",
-		"randomatic": "*",
-		"react": "*",
-		"react-dom": "*",
-		"react-motion": "*",
-		"react-motion-ui-pack": "*",
+		"@firebase/app-types": "0.x",
+		"@types/react": "^16.3.12",
+		"firebase": "^4.13.1",
+		"firebase-admin": "^5.12.0",
+		"firebase-tools": "^3.18.4",
+		"prop-types": "^15.6.1",
+		"randomatic": "^3.0.0",
+		"react": "^16.3.2",
+		"react-dom": "^16.3.2",
 		"react-redux": "^5.0.7",
-		"react-router-dom": "*",
-		"react-scripts": "*",
-		"redux": "*",
-		"redux-firestore": "*",
-		"redux-thunk": "*",
-		"styled-components": "*"
+		"react-scripts": "^1.1.4",
+		"redux": "^4.0.0",
+		"redux-thunk": "^2.2.0"
 	},
 	"scripts": {
 		"start": "react-scripts start",
@@ -29,13 +24,13 @@
 		"eject": "react-scripts eject"
 	},
 	"devDependencies": {
-		"eslint": "*",
-		"eslint-config-airbnb": "*",
-		"eslint-config-prettier": "*",
-		"eslint-plugin-import": "*",
-		"eslint-plugin-jsx-a11y": "*",
-		"eslint-plugin-prettier": "*",
-		"eslint-plugin-react": "*",
-		"prettier": "*"
+		"eslint": "^4.19.1",
+		"eslint-config-airbnb": "^16.1.0",
+		"eslint-config-prettier": "^2.9.0",
+		"eslint-plugin-import": "^2.11.0",
+		"eslint-plugin-jsx-a11y": "^6.0.3",
+		"eslint-plugin-prettier": "^2.6.0",
+		"eslint-plugin-react": "^7.7.0",
+		"prettier": "^1.12.1"
 	}
 }
