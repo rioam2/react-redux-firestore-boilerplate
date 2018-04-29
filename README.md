@@ -17,6 +17,7 @@ At first, the combination of redux with firebase's firestore seems quite odd. Fi
 #### Why make a boilerplate?
 
 This one should be pretty straight-forward. As developers, we need to work effectively and efficiently as possible on our projects. While playing around with setting up a backend database can be fun once in a while, doing it multiple times in a repetative nature can be cumbersome and unnecessary. Sometimes we just need things to work. This boilerplate provides an initial stepping stone for you to base the framework of your web applications so you can spend time doing the more important things.
+![Data Flow Model Illustration](https://github.com/zipzapflap/react-redux-firestore-boilerplate/raw/master/wiki/dataflow-model.png)
 
 ## Todo
 
