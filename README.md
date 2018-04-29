@@ -4,7 +4,7 @@ This is a boilerplate for React.js which uses Google Firebase's Firestore realti
 
 ## Introduction
 
-This section gives a breif overview of the philosophy behind this boilerplate.
+This section gives a brief overview of the philosophy behind this boilerplate.
 
 #### Why Firebase?
 
@@ -23,8 +23,8 @@ This one should be pretty straight-forward. As developers, we need to work effec
 
 * [ ] Finish project's Readme
   * [ ] Provide proper usage and installation instructions
-  * [ ] Document the data-flow model
-  * [ ] Provide documentation of how user's and their stores are organized.
+  * [x] Document the data-flow model
+  * [ ] Provide documentation of how users and their data stores are organized.
 * [x] Create action methods for adding/modifying database data
 
 ## Usage
