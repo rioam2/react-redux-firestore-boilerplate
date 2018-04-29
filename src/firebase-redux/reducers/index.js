@@ -1,35 +1,50 @@
 import { combineReducers } from 'redux';
 import stores from '../stores';
 
-/* Define Firestore Fetch Reducers */
-const reducers = stores.map(store => {
-	const initialState = { [store]: {} };
-	return {
-		[store]: (state = initialState, action) => {
-			if (action.type === `${store}_FETCH`) {
-				return { ...action.payload };
-			}
-			return state;
-		}
-	};
-});
+/**
+ *  This file contains reducer definitions for redux actions.
+ *  There are two main reducer actions defined in this file, first,
+ *  FETCH actions are defined for handling new firestore snapshots,
+ *  and then a user reducer is defined for mounting firestore user
+ *  metadata to the local state.
+ *
+ *  @author rioam2
+ *  @export {reducer} rootReducer
+ */
 
-/* Define a reducer to handle authentication state */
-const authReducer = (state = { isLoggedIn: false }, action) => {
-	if (action.type === 'AUTH_LOGIN') {
-		return {
-			isLoggedIn: true,
-			data: action.payload
-		};
-	} else if (action.type === 'AUTH_LOGOUT') {
-		return { isLoggedIn: false };
+// Define Firestore Fetch Reducers
+// and store in the reducers array
+const reducers = stores.map(store => ({
+	[store]: (state = {}, action) => {
+		switch (action.type) {
+			case `${store}_FETCH`:
+				return { ...action.payload };
+			case `${store}_DETACH`:
+				return {};
+			default:
+				return state;
+		}
 	}
-	return state;
+}));
+
+// Define User Reducer for mounting user metadata to local state
+const authReducer = (state = null, action) => {
+	switch (action.type) {
+		case 'AUTH_LOGIN':
+			return { ...action.payload };
+		case 'AUTH_LOGOUT':
+			return null;
+		default:
+			return state;
+	}
 };
 
-/* Combine and export the array of reducers defined above */
-const rootReducer = combineReducers({
+// Combine each fetch reducer and the user reducer:
+const allReducers = {
 	...Object.assign({}, ...reducers),
 	user: authReducer
-});
+};
+
+// Export the root reducer
+const rootReducer = combineReducers(allReducers);
 export default rootReducer;
