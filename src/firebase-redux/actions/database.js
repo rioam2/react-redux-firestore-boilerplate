@@ -3,6 +3,16 @@ import firestoreDB from '../firestore';
 import firebaseDB from '../firebase';
 
 const database = {
+	/**
+	 *  Allows you to set the value of data on the firestore database.
+	 *  This data flows back into the application through state.
+	 *  @author rioam2
+	 *  @param  {[type]} fieldString Field to update in 'dot-notation'.
+	 *  														 Ex: `${StoreName}.field.subField`
+	 *  														 Ex: settingsData.darkMode
+	 *  @param  {[type]} value       The value to assign to the specified
+	 *  														 field. Can be any datatype.
+	 */
 	set: (fieldString, value) => {
 		const [store, ...fieldpath] = fieldString.split('.');
 		const field = firestoreDB.doc(
@@ -12,6 +22,15 @@ const database = {
 			[`${fieldpath.join('.')}`]: value
 		});
 	},
+
+	/**
+	 *  Allows you to delete an entry or field from the remote firestore database
+	 *  This is done using the set method above.
+	 *  @author rioam2
+	 *  @param  {[type]} fieldString Field to update in 'dot-notation'.
+	 *  														 Ex: `${StoreName}.field.subField`
+	 *  														 Ex: settingsData.darkMode
+	 */
 	delete: fieldString => {
 		database.set(fieldString, Firebase.firestore.FieldValue.delete());
 	}
