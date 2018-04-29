@@ -1,2 +1,2 @@
-const stores = ['userData', 'settingsData'];
+const stores = ['settingsData'];
 export default stores;
