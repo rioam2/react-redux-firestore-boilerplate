@@ -2,7 +2,6 @@
 
 This is a boilerplate for React.js which uses Google Firebase's Firestore realtime database in conjunction with Redux to provide an asynchronous and persistent datastore for building large-scale web applications with a solid, scalable foundation.
 
-
 ## Introduction
 
 This section gives a breif overview of the philosophy behind this boilerplate.
@@ -21,11 +20,11 @@ This one should be pretty straight-forward. As developers, we need to work effec
 
 ## Todo
 
-- [ ] Finish project's Readme
-  - [ ] Provide proper usage and installation instructions
-  - [ ] Document the data-flow model
-  - [ ] Provide documentation of how user's and their stores are organized.
-- [ ] Create action methods for adding/modifying database data
+* [ ] Finish project's Readme
+  * [ ] Provide proper usage and installation instructions
+  * [ ] Document the data-flow model
+  * [ ] Provide documentation of how user's and their stores are organized.
+* [x] Create action methods for adding/modifying database data
 
 ## Usage
 
@@ -33,5 +32,5 @@ This boilerplate provides you with all of the tools you need to get started with
 
 #### Create a Firebase Project:
 
-After cloning this repository to your working directory and installing the dependencies with ```yarn install``` or ```npm install```, you will need to connect your application to a new firebase project. To do this, navigate to the firebase console here:
+After cloning this repository to your working directory and installing the dependencies with `yarn install` or `npm install`, you will need to connect your application to a new firebase project. To do this, navigate to the firebase console here:
 https://console.firebase.google.com/
