@@ -14,13 +14,15 @@ const database = {
 	 *  														 field. Can be any datatype.
 	 */
 	set: (fieldString, value) => {
-		const [store, ...fieldpath] = fieldString.split('.');
-		const field = firestoreDB.doc(
-			`/users/${firebaseDB.auth().currentUser.uid}/${store}/data`
-		);
-		field.update({
-			[`${fieldpath.join('.')}`]: value
-		});
+		if (firebaseDB.auth().currentUser) {
+			const [store, ...fieldpath] = fieldString.split('.');
+			const field = firestoreDB.doc(
+				`/users/${firebaseDB.auth().currentUser.uid}/${store}/data`
+			);
+			field.update({
+				[`${fieldpath.join('.')}`]: value
+			});
+		}
 	},
 
 	/**
