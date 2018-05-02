@@ -5,9 +5,9 @@ import firebaseDB from '../firebase';
 const database = {
 	/**
 	 *  Allows you to set the value of data on the firestore database.
-	 *  This data flows back into the application through state.
+	 *  This data flows back into the application through redux state.
 	 *  @author rioam2
-	 *  @param  {[type]} fieldString Field to update in 'dot-notation'.
+	 *  @param  {[String]} fieldString Field to update in 'dot-notation'.
 	 *  														 Ex: `${StoreName}.field.subField`
 	 *  														 Ex: settingsData.darkMode
 	 *  @param  {[type]} value       The value to assign to the specified
@@ -29,7 +29,7 @@ const database = {
 	 *  Allows you to delete an entry or field from the remote firestore database
 	 *  This is done using the set method above.
 	 *  @author rioam2
-	 *  @param  {[type]} fieldString Field to update in 'dot-notation'.
+	 *  @param  {[String]} fieldString Field to update in 'dot-notation'.
 	 *  														 Ex: `${StoreName}.field.subField`
 	 *  														 Ex: settingsData.darkMode
 	 */
