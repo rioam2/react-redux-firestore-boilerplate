@@ -8,15 +8,15 @@ This section gives a brief overview of the philosophy behind this boilerplate.
 
 #### Why Firebase?
 
-As you build larger react web applications, the need for a central, consolodated remote database becomes quite clear. Usually, one would need to learn how to configure a server backend to inter-operate with your front-end applications to make this possible. Google's Firebase/Firestore service aleviates this need by providing scalable databases that are free to provision. These databases are real-time, and can work with React's unidirectional dataflow to enable powerful, reactive applications that update in realtime with your databases.
+As you build larger react web applications, the need for a central, consolidated remote database becomes quite clear. Usually, one would need to learn how to configure a server backend to inter-operate with your front-end applications to make this possible. Google's Firebase/Firestore service alleviates this need by providing scalable databases that are free to provision. These databases are real-time, and can work with React's unidirectional dataflow to enable powerful, reactive applications that update in realtime with your databases.
 
 #### Why Redux?
 
-At first, the combination of redux with firebase's firestore seems quite odd. Firestore allows you to make shallow queries, so why do we need redux? While not explicitly necessary, redux enables you to extend react's powerful stateful model and handle data in a more direct manner. For example, if we were to inject our applications database into the root component of our application, we would then need to pass this data through props to every data-requiring component down the road. This is both unclean, and leads to over-passing extraneous data in many cases. Through react-redux's connect decorator, and mapStateToProps methods, we can inject part or all of our database directly into a component at any level. This higher-order-component structure allows us to be more effective and clean with our data-flow when large databases are being utilized.
+At first, the combination of redux with firebase's firestore seems quite odd. Firestore allows you to make shallow queries, so why do we need redux? While not explicitly necessary, redux enables you to extend react's powerful stateful model and handle data in a more direct manner. For example, if we were to inject our application's database into the root component of our application, we would then need to pass this data through props to every data-requiring component down the road. This is both unclean, and leads to over-passing extraneous data in many cases. Through react-redux's connect decorator, and mapStateToProps methods, we can inject part or all of our database directly into a component at any level. This higher-order-component structure allows us to be more effective and clean with our data-flow when large databases are being utilized.
 
 #### Why make a boilerplate?
 
-This one should be pretty straight-forward. As developers, we need to work effectively and efficiently as possible on our projects. While playing around with setting up a backend database can be fun once in a while, doing it multiple times in a repetative nature can be cumbersome and unnecessary. Sometimes we just need things to work. This boilerplate provides an initial stepping stone for you to base the framework of your web applications so you can spend time doing the more important things.
+This one should be pretty straight-forward. As developers, we need to work as effectively and efficiently as possible on our projects. While playing around with setting up a backend database can be fun once in a while, doing it multiple times in a repetitive nature can be cumbersome and unnecessary. Sometimes we just need things to work. This boilerplate provides an initial stepping stone for you to base the framework of your web applications so you can spend time doing the more important things.
 ![Data Flow Model Illustration](https://github.com/zipzapflap/react-redux-firestore-boilerplate/raw/master/wiki/dataflow-model.png)
 
 ## Todo
@@ -42,7 +42,7 @@ https://console.firebase.google.com/
 
 #### Setup a Firestore with Rules:
 
-In the Firebase console, create a new Firestore database (not realtime database). You can start with either 'Locked Mode' access permission rules or 'test mode'- we will be modifying these momentarily. Once you have setup a firestore, you can naviate to the 'Rules' section of the database and enter in the following permissions to allow rudimentary access for users and their data:
+In the Firebase console, create a new Firestore database (not realtime database). You can start with either 'Locked Mode' access permission rules or 'test mode'- we will be modifying these momentarily. Once you have setup a firestore, you can navigate to the 'Rules' section of the database and enter in the following permissions to allow rudimentary access for users and their data:
 
 ```javascript
 service cloud.firestore {
@@ -71,7 +71,7 @@ REACT_APP_DATABASE_URL=https://{Firebase Project ID}.firebaseio.com
 REACT_APP_PROJECTID={Firebase Project ID}
 ```
 
-Save these changes, and you have successfully liked up your application to use your cloud database.
+Save these changes, and you have successfully linked up your application to use your cloud database.
 
 #### Authenticating Users from your Application:
 
